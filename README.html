@@ -537,17 +537,17 @@ title="Print to PDF"
 <h2>About<a class="headerlink" href="#about" title="Permalink to this heading">#</a></h2>
 <p>I started off with the objective of writing a Streamlit application for using OpenAI APIs to query and produce responses for project data. To get started, I used a test dataset – a <a class="reference external" href="https://www.kaggle.com/datasets/starbucks/store-locations">directory of Starbucks locations</a> – that I found on Kaggle.</p>
 <p>Initial results were very promising:</p>
-<p><img alt="" src="Users/holly/Documents/GitHub/coffee_chat/docs/images/Botty0.png" /></p>
-<p><img alt="" src="Users/holly/Documents/GitHub/coffee_chat/docs/images/botty1.png" /></p>
+<p><img alt="" src="docs/images/botty0.png" /></p>
+<p><img alt="" src="_images/botty1.png" /></p>
 <p>But it quickly became apparant that the answers were nonsense. What we really need ChatGPT to do is to:</p>
 <p>(1)  Understand the basic nature our dataset – column names, sample data, where the files are located, etc.</p>
 <p>(2) Write code that could help us answer our question, based on the dataset. The code should be easy to cut-paste and use.</p>
 <p>This worked out super well:</p>
-<p><img alt="" src="Users/holly/Documents/GitHub/coffee_chat/docs/images/Botty2.png" /></p>
+<p><img alt="" src="docs/images/botty2.png" /></p>
 <p>But, all this cutting-and-pasting from Streamlit into PyCharm got annoying. So, I started over again and prepared a Jupyter notebook that does the same thing, plus (at your own risk) automatically parses and executes the code as well. It’s so neat! Take a look at a sample output:</p>
-<p><img alt="" src="Users/holly/Library/Application%20Support/marktext/images/2023-03-30-22-53-30-image.png" /></p>
-<p><img alt="" src="Users/holly/Library/Application%20Support/marktext/images/2023-03-30-22-57-55-image.png" /></p>
-<p>The craziest thing is that the output (maps, charts) will look a little different everytime (!), but the numerical results will generally be consistent.</p>
+<p><img alt="" src="_images/botty3.png" /></p>
+<p><img alt="" src="_images/botty4.png" /></p>
+<p>The craziest thing is that the output (maps, charts) will look a little different everytime (!), but the numerical results will generally be consistent. No, wait, what is crazier is how the OpenAI API combines its own knowledge – in this case, the names of EU countries and the Starbucks brand color – with our data to generate a response. Wow.</p>
 <p>As a next step, I will apply these techniques to project data – including multiple datasets – to see how we may expedite our data exploration work. Meanwhile, comments and feedback welcome!</p>
 </section>
 <section id="license">
