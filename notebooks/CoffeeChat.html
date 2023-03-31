@@ -790,7 +790,7 @@ title="Print to PDF"
                                   <span class="sa">f</span><span class="s2">&quot;are sample data: </span><span class="si">{</span><span class="n">json_head</span><span class="si">}</span><span class="s2">. The data can be found here: ../data/directory.csv&quot;</span>
      <span class="p">}]</span>
 
-<span class="c1"># Set up global variables so that you can ask follow up questions and receive answerse based on prior responses.</span>
+<span class="c1"># Set up global variables so that you can ask follow up questions and receive answers based on prior responses.</span>
 <span class="n">messages</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">messages</span> <span class="o">+=</span> <span class="n">BASE_PROMPT</span>
 <span class="n">message_response</span> <span class="o">=</span> <span class="s2">&quot;x&quot;</span>
@@ -909,7 +909,8 @@ title="Print to PDF"
 </section>
 <section id="pause">
 <h2>Pause!<a class="headerlink" href="#pause" title="Permalink to this heading">#</a></h2>
-<p>Now, here is what is really exciting about OpenAI: the API combines information about the dataset with its own knowledge. For example, when asking about the number of Starbucks in each EU country, the AI will generate a list of countries to use. Or, if asking the AI to use Starbucks colors for charts, it will know to use infamous Starbucks green. 😃 If you are lucky, you may also see a few funny details that the AI made up, like imgainary links to Starbucks logo files. Don’t worry about these – we’re just interested in the code.</p>
+<p>Sometimes the response will try to answer the prompt, in addition to providing the code. These answers are often (but not always) nonsense! Make sure you review and run the code yourself to be certain of the result.</p>
+<p>Now, here is what is really exciting about OpenAI: the API combines information about the dataset with its own knowledge. For example, when asking about the number of Starbucks in each EU country, the AI will generate a list of countries to use. Or, if asking the AI to use Starbucks colors for charts, it will know to use infamous Starbucks green. 😃 Amazing, and also very risky – always double check the ‘additional knowledge’ being provided.</p>
 </section>
 <section id="step-7-parse-the-openai-response-to-pull-out-the-python-code">
 <h2>Step 7. Parse the OpenAI response to pull out the Python code.<a class="headerlink" href="#step-7-parse-the-openai-response-to-pull-out-the-python-code" title="Permalink to this heading">#</a></h2>
