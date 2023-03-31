@@ -1,6 +1,6 @@
 # 🚀 Putting ChatGPT to (Data Science) Work
 
-## About
+Hello!
 
 I started off with the objective of writing a Streamlit application for using OpenAI APIs to query and produce responses for project data. To get started, I used a test dataset -- a [directory of Starbucks locations](https://www.kaggle.com/datasets/starbucks/store-locations) -- that I found on Kaggle. 
 
