@@ -12,3 +12,5 @@ folium==0.14.0
 regex==2022.7.9
 ipython==8.10.0
 shapely==2.0.1
+seaborn==0.12.2
+matplotlib==3.7.1
