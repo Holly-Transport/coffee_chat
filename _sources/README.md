@@ -6,8 +6,6 @@ I began with the objective of writing a Streamlit application for using OpenAI A
 
 Initial results were very promising:
 
-|     |     |
-| --- | --- |
 
 ![](docs/images/Botty0.png)
 
