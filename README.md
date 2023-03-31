@@ -6,30 +6,21 @@ I began with the objective of writing a Streamlit application for using OpenAI A
 
 Initial results were very promising:
 
-
 ![](docs/images/Botty0.png)
 
+-------------------------------------------------------------------------
 
 ![](docs/images/botty1.png)
 
-
-
 But it quickly became apparant that while the methods seemed about right, the answers were complete nonsense. Rather than try to come up with answers based on only partial information (since token limits prevent us from uploading entire datasets), what we really need ChatGPT to do is to:
-
 
 1. Understand our meta data -- e.g., column names, data types, where the files are located, etc. and
 
 2. Write code that could help us answer our question, based on the metadata. The code should be easy to cut-paste and use. 
 
-
-
 This approach worked out super well:
 
-
-
 ![](docs/images/Botty2.png)
-
-
 
 BUT. All this cutting-and-pasting from Streamlit into PyCharm got annoying. So, I started over again and prepared a Jupyter notebook that does the same thing, plus (at one's own risk) automatically parses and executes the code. It's so neat! Take a look at a sample output:
 
@@ -37,10 +28,7 @@ BUT. All this cutting-and-pasting from Streamlit into PyCharm got annoying. So, 
 
 ![](docs/images/botty4.png)
 
-
-
 The craziest thing is how the OpenAI API combines its own knowledge -- in this case, the names of EU countries and the Starbucks brand color -- with our metadata to generate a response. When it works -- wow. 
-
 
 As a next step, I am applying these techniques to project data -- including multiple datasets -- to see how we may expedite our data exploration work. Meanwhile, comments and feedback welcome!
 
