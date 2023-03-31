@@ -4,11 +4,11 @@ Hello! Here's what we've got.
 
 I began with the objective of writing a Streamlit application for using OpenAI APIs to answer questions based on information in provided datasets. To get started, I used a test dataset -- a [directory of Starbucks locations](https://www.kaggle.com/datasets/starbucks/store-locations) -- that I found on Kaggle. 
 
-After realizing that it doesn't take very much data to exceed OpenAI API token limits and finding ways to pre-parse my data, it was smooth sailing. Initial results were very promising:
-
+After realizing that it doesn't take very much data to exceed OpenAI API token limits, I found a way to pre-parse the data. Initial results were very promising:
 
 
 ![](docs/images/Botty0.png)
+
 
 ![](docs/images/botty1.png)
 
