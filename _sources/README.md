@@ -8,7 +8,7 @@ After realizing that it doesn't take very much data to exceed OpenAI API token l
 
 
 
-![](docs/images/botty0.png)
+![](docs/images/Botty0.png)
 
 ![](docs/images/botty1.png)
 
