@@ -2,7 +2,7 @@ format: jb-book
 root: README
 
 parts:
-  - caption: How to Use ChatGPT to Generate Code for Data Science (with Coffee)
+  - caption: How to Use ChatGPT to Write Your Data Science Code (with Coffee)
     numbered: False
     chapters:
       - file: notebooks/CoffeeChat.ipynb
