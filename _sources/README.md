@@ -6,8 +6,14 @@ I began with the objective of writing a Streamlit application for using OpenAI A
 
 Initial results were very promising:
 
-| <img title="" src="docs/images/Botty0.png" alt="" width="361"> | <img title="" src="docs/images/botty1.png" alt="" width="500"> |
-| -------------------------------------------------------------- | -------------------------------------------------------------- |
+|     |     |
+| --- | --- |
+
+![](docs/images/Botty0.png)
+
+///
+
+![](docs/images/botty1.png)
 
 But it quickly became apparant that while the methods seemed about right, the answers were complete nonsense. Rather than try to come up with answers based on only partial information (since token limits prevent us from uploading entire datasets), what we really need ChatGPT to do is to:
 
