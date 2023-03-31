@@ -6,9 +6,9 @@ I started off with the objective of writing a Streamlit application for using Op
 
 Initial results were very promising:
 
-![](/Users/holly/Documents/GitHub/coffee_chat/docs/images/Botty0.png)
+![](docs/images/botty0.png)
 
-![](/Users/holly/Documents/GitHub/coffee_chat/docs/images/botty1.png)
+![](docs/images/botty1.png)
 
 But it quickly became apparant that the answers were nonsense. What we really need ChatGPT to do is to:
 
@@ -18,21 +18,19 @@ But it quickly became apparant that the answers were nonsense. What we really ne
 
 This worked out super well:
 
-![](/Users/holly/Documents/GitHub/coffee_chat/docs/images/Botty2.png)
+![](docs/images/botty2.png)
 
 But, all this cutting-and-pasting from Streamlit into PyCharm got annoying. So, I started over again and prepared a Jupyter notebook that does the same thing, plus (at your own risk) automatically parses and executes the code as well. It's so neat! Take a look at a sample output:
 
-![](/Users/holly/Library/Application%20Support/marktext/images/2023-03-30-22-53-30-image.png)
+![](docs/images/botty3.png)
 
-![](/Users/holly/Library/Application%20Support/marktext/images/2023-03-30-22-57-55-image.png)
+![](docs/images/botty4.png)
 
-The craziest thing is that the output (maps, charts) will look a little different everytime (!), but the numerical results will generally be consistent. 
+The craziest thing is that the output (maps, charts) will look a little different everytime (!), but the numerical results will generally be consistent. No, wait, what is crazier is how the OpenAI API combines its own knowledge -- in this case, the names of EU countries and the Starbucks brand color -- with our data to generate a response. Wow.
+
+
 
 As a next step, I will apply these techniques to project data -- including multiple datasets -- to see how we may expedite our data exploration work. Meanwhile, comments and feedback welcome!
-
-
-
-
 
 ## License
 
