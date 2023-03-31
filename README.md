@@ -8,7 +8,7 @@ Initial results were very promising:
 
 ![](docs/images/Botty0.png)
 
--------------------------------------------------------------------------
+--------------------------
 
 ![](docs/images/botty1.png)
 
@@ -28,9 +28,9 @@ BUT. All this cutting-and-pasting from Streamlit into PyCharm got annoying. So, 
 
 ![](docs/images/botty4.png)
 
-The craziest thing is how the OpenAI API combines its own knowledge -- in this case, the names of EU countries and the Starbucks brand color -- with our metadata to generate a response. When it works -- wow. 
+Note how the OpenAI API combines its own knowledge -- in this case, the names of EU countries and the Starbucks brand color -- with our metadata to generate a response. This makes the results risky, but also very exciting!
 
-As a next step, I am applying these techniques to project data -- including multiple datasets -- to see how we may expedite our data exploration work. Meanwhile, comments and feedback welcome!
+As a next step, I am applying these techniques to project data -- including multiple datasets at one time -- to see how we may expedite our data exploration work. Meanwhile, comments and feedback welcome!
 
 ## License
 
