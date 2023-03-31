@@ -31,7 +31,9 @@ BUT. All this cutting-and-pasting from Streamlit into PyCharm got annoying. So, 
 
 Note how the OpenAI API combines its own knowledge -- in this case, the names of EU countries and the Starbucks brand color -- with our metadata to generate a response. This makes the results risky, but also very exciting!
 
-As a next step, I am applying these techniques to project data -- including multiple datasets at one time -- to see how we may expedite our data exploration work. Meanwhile, comments and feedback welcome!
+It should be noted that the code does not always work -- sometimes it is based on deprecated libraries, or the syntax is just wrong. Or the method doesn't quite capture the question. But it gives the user such a head start in planning their code, I think it's well worth it. 
+
+As a next step, I am expanding the experimentation by applying these techniques to project data -- including multiple datasets at one time -- to see how we may expedite our data exploration work. Meanwhile, comments and feedback welcome!
 
 ## License
 
