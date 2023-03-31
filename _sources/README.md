@@ -4,7 +4,7 @@ Hello! Here's what we've got.
 
 I began with the objective of writing a Streamlit application for using OpenAI APIs to answer questions based on information in provided datasets. To get started, I used a test dataset -- a [directory of Starbucks locations](https://www.kaggle.com/datasets/starbucks/store-locations) -- that I found on Kaggle. 
 
-After realizing that it doesn't take very much data to exceed OpenAI API token limits, I found a way to pre-parse the data. Initial results were very promising:
+Initial results were very promising:
 
 
 ![](docs/images/Botty0.png)
@@ -14,8 +14,7 @@ After realizing that it doesn't take very much data to exceed OpenAI API token l
 
 
 
-But it quickly became apparant that while the methods seemed about right, the answers were complete nonsense. What we really need ChatGPT to do is to:
-
+But it quickly became apparant that while the methods seemed about right, the answers were complete nonsense. Rather than try to come up with answers based on only partial information (since token limits prevent us from uploading entire datasets), what we really need ChatGPT to do is to:
 
 
 1. Understand our meta data -- e.g., column names, data types, where the files are located, etc. and
@@ -40,8 +39,7 @@ BUT. All this cutting-and-pasting from Streamlit into PyCharm got annoying. So, 
 
 
 
-The craziest thing is that the output (maps, charts) will look a little different everytime (!), but the numerical results will generally be consistent. No, wait, the crazier thing is how the OpenAI API combines its own knowledge -- in this case, the names of EU countries and the Starbucks brand color -- with our metadata to generate a response. Wow.
-
+The craziest thing is how the OpenAI API combines its own knowledge -- in this case, the names of EU countries and the Starbucks brand color -- with our metadata to generate a response. When it works -- wow. 
 
 
 As a next step, I am applying these techniques to project data -- including multiple datasets -- to see how we may expedite our data exploration work. Meanwhile, comments and feedback welcome!
