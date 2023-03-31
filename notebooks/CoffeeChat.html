@@ -536,23 +536,26 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#step-3-load-your-data-and-parse-inputs-for-the-openai-query">
    Step 3. Load your data and parse inputs for the OpenAI query
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#step-4-prime-the-ai-define-the-role-and-response-parameters-for-the-ai">
-     Step 4. Prime the AI – define the role and response parameters for the AI
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#step-5-write-a-function-for-sending-base-prompt-and-question-to-openai-and-storing-response">
-     Step 5. Write a function for sending base prompt and question to OpenAI and storing response.
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#step-6-ask-a-question">
-     Step 6. Ask a question!
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-4-prime-the-ai-define-the-role-and-response-parameters-for-the-ai">
+   Step 4. Prime the AI – define the role and response parameters for the AI
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-5-write-a-function-for-sending-base-prompt-and-question-to-openai-and-storing-response">
+   Step 5. Write a function for sending base prompt and question to OpenAI and storing response.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-6-ask-a-question">
+   Step 6. Ask a question!
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optional-ask-a-follow-up-question">
+   Optional: Ask a follow up question.
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#pause">
@@ -777,8 +780,9 @@ title="Print to PDF"
 </table>
 </div></div></div>
 </div>
+</section>
 <section id="step-4-prime-the-ai-define-the-role-and-response-parameters-for-the-ai">
-<h3>Step 4. Prime the AI – define the role and response parameters for the AI<a class="headerlink" href="#step-4-prime-the-ai-define-the-role-and-response-parameters-for-the-ai" title="Permalink to this heading">#</a></h3>
+<h2>Step 4. Prime the AI – define the role and response parameters for the AI<a class="headerlink" href="#step-4-prime-the-ai-define-the-role-and-response-parameters-for-the-ai" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Prepare your base prompt, which tells the OpenAI oracale what its role is and any</span>
@@ -800,7 +804,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="step-5-write-a-function-for-sending-base-prompt-and-question-to-openai-and-storing-response">
-<h3>Step 5. Write a function for sending base prompt and question to OpenAI and storing response.<a class="headerlink" href="#step-5-write-a-function-for-sending-base-prompt-and-question-to-openai-and-storing-response" title="Permalink to this heading">#</a></h3>
+<h2>Step 5. Write a function for sending base prompt and question to OpenAI and storing response.<a class="headerlink" href="#step-5-write-a-function-for-sending-base-prompt-and-question-to-openai-and-storing-response" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">question</span> <span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
@@ -818,7 +822,7 @@ title="Print to PDF"
     <span class="n">messages</span> <span class="o">+=</span> <span class="p">[{</span><span class="s1">&#39;role&#39;</span><span class="p">:</span><span class="s1">&#39;assistant&#39;</span><span class="p">,</span> <span class="s1">&#39;content&#39;</span><span class="p">:</span><span class="n">message_response</span><span class="p">}]</span>
 
     <span class="c1"># Display the question and results using Markdown</span>
-    <span class="n">display</span> <span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;## &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">))</span>
+    <span class="n">display</span> <span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;### &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">))</span>
     <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">message_response</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -826,7 +830,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="step-6-ask-a-question">
-<h3>Step 6. Ask a question!<a class="headerlink" href="#step-6-ask-a-question" title="Permalink to this heading">#</a></h3>
+<h2>Step 6. Ask a question!<a class="headerlink" href="#step-6-ask-a-question" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;How many Starbucks are in the EU?&quot;</span>
@@ -836,76 +840,81 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <p class="rubric">How many Starbucks are in the EU?</p>
-<p>Here is a code that will answer your question:</p>
+<p>To answer this question using the given dataframe, we need to filter the data where the “Country” column is in the EU countries list, and then count the number of rows. Here’s the code to do this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="c1"># Read the Starbucks directory csv file</span>
+<span class="c1"># Read the Starbucks dataframe</span>
 <span class="n">starbucks_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/directory.csv&#39;</span><span class="p">)</span>
 
-<span class="c1"># Filter the rows with countries in the EU</span>
+<span class="c1"># List of EU countries</span>
 <span class="n">eu_countries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;AT&#39;</span><span class="p">,</span> <span class="s1">&#39;BE&#39;</span><span class="p">,</span> <span class="s1">&#39;BG&#39;</span><span class="p">,</span> <span class="s1">&#39;CY&#39;</span><span class="p">,</span> <span class="s1">&#39;CZ&#39;</span><span class="p">,</span> <span class="s1">&#39;DE&#39;</span><span class="p">,</span> <span class="s1">&#39;DK&#39;</span><span class="p">,</span> <span class="s1">&#39;EE&#39;</span><span class="p">,</span> <span class="s1">&#39;ES&#39;</span><span class="p">,</span> <span class="s1">&#39;FI&#39;</span><span class="p">,</span> <span class="s1">&#39;FR&#39;</span><span class="p">,</span> <span class="s1">&#39;GR&#39;</span><span class="p">,</span> <span class="s1">&#39;HR&#39;</span><span class="p">,</span> <span class="s1">&#39;HU&#39;</span><span class="p">,</span> <span class="s1">&#39;IE&#39;</span><span class="p">,</span> <span class="s1">&#39;IT&#39;</span><span class="p">,</span> <span class="s1">&#39;LT&#39;</span><span class="p">,</span> <span class="s1">&#39;LU&#39;</span><span class="p">,</span> <span class="s1">&#39;LV&#39;</span><span class="p">,</span> <span class="s1">&#39;MT&#39;</span><span class="p">,</span> <span class="s1">&#39;NL&#39;</span><span class="p">,</span> <span class="s1">&#39;PL&#39;</span><span class="p">,</span> <span class="s1">&#39;PT&#39;</span><span class="p">,</span> <span class="s1">&#39;RO&#39;</span><span class="p">,</span> <span class="s1">&#39;SE&#39;</span><span class="p">,</span> <span class="s1">&#39;SI&#39;</span><span class="p">,</span> <span class="s1">&#39;SK&#39;</span><span class="p">]</span>
-<span class="n">eu_starbucks_df</span> <span class="o">=</span> <span class="n">starbucks_df</span><span class="p">[</span><span class="n">starbucks_df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">eu_countries</span><span class="p">)]</span>
 
-<span class="c1"># Count the number of rows in the filtered dataframe</span>
-<span class="n">num_starbucks_in_eu</span> <span class="o">=</span> <span class="n">eu_starbucks_df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="c1"># Filter Starbucks stores in the EU</span>
+<span class="n">starbucks_eu_df</span> <span class="o">=</span> <span class="n">starbucks_df</span><span class="p">[</span><span class="n">starbucks_df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">eu_countries</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">starbucks_df</span><span class="p">[</span><span class="s1">&#39;Brand&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Starbucks&#39;</span><span class="p">)]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of Starbucks in the EU:&quot;</span><span class="p">,</span> <span class="n">num_starbucks_in_eu</span><span class="p">)</span>
+<span class="c1"># Count the number of Starbucks stores in the EU</span>
+<span class="n">num_of_starbucks_in_eu</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">starbucks_eu_df</span><span class="p">)</span>
+
+<span class="c1"># Print the result</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are&quot;</span><span class="p">,</span> <span class="n">num_of_starbucks_in_eu</span><span class="p">,</span> <span class="s2">&quot;Starbucks stores in the EU.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This code reads the Starbucks directory csv file into a pandas dataframe. It then filters the rows with countries in the EU using the <code class="docutils literal notranslate"><span class="pre">isin()</span></code> function to match the ‘Country’ column with the <code class="docutils literal notranslate"><span class="pre">eu_countries</span></code> list. Finally, it counts the number of rows in the filtered dataframe and prints the result.</p>
-<p>Output:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Number</span> <span class="n">of</span> <span class="n">Starbucks</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">EU</span><span class="p">:</span> <span class="mi">3194</span>
-</pre></div>
-</div>
-<p>Therefore, there are 3194 Starbucks stores in the EU, based on the provided dataset.</p>
+<p>Note that this code assumes that the “Country” column contains the two-letter country codes, such as “AD” for Andorra, “AE” for United Arab Emirates, etc.</p>
 </div>
 </div>
+</section>
+<section id="optional-ask-a-follow-up-question">
+<h2>Optional: Ask a follow up question.<a class="headerlink" href="#optional-ask-a-follow-up-question" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Optional follow up question. You can add these until you run out of tokens. </span>
-<span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;Can you turn the response into a chart, using Starbucks-style colors and fonts?&quot;</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;Can you turn the response into a chart, by country and using colors and fonts that are used in the Starbucks logo?&quot;</span>
 <span class="n">question</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<p class="rubric">Can you turn the response into a chart, using Starbucks-style colors and fonts?</p>
-<p>Yes, we can use the <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> library which provides several pre-defined styles such as <code class="docutils literal notranslate"><span class="pre">darkgrid</span></code>, <code class="docutils literal notranslate"><span class="pre">whitegrid</span></code>, <code class="docutils literal notranslate"><span class="pre">dark</span></code>, <code class="docutils literal notranslate"><span class="pre">white</span></code>, <code class="docutils literal notranslate"><span class="pre">ticks</span></code>. Here’s how we can use the <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> library to create the chart with the Starbucks-style colors and fonts.</p>
+<p class="rubric">Can you turn the response into a chart, by country and using colors and fonts that are used in the Starbucks logo?</p>
+<p>Sure! Here’s the modified code that includes a horizontal bar chart with colors and fonts based on the Starbucks logo, grouped by country:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
-<span class="c1"># Read the Starbucks directory csv file</span>
+<span class="c1"># Read the Starbucks dataframe</span>
 <span class="n">starbucks_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/directory.csv&#39;</span><span class="p">)</span>
 
-<span class="c1"># Filter the rows with countries in the EU</span>
+<span class="c1"># List of EU countries</span>
 <span class="n">eu_countries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;AT&#39;</span><span class="p">,</span> <span class="s1">&#39;BE&#39;</span><span class="p">,</span> <span class="s1">&#39;BG&#39;</span><span class="p">,</span> <span class="s1">&#39;CY&#39;</span><span class="p">,</span> <span class="s1">&#39;CZ&#39;</span><span class="p">,</span> <span class="s1">&#39;DE&#39;</span><span class="p">,</span> <span class="s1">&#39;DK&#39;</span><span class="p">,</span> <span class="s1">&#39;EE&#39;</span><span class="p">,</span> <span class="s1">&#39;ES&#39;</span><span class="p">,</span> <span class="s1">&#39;FI&#39;</span><span class="p">,</span> <span class="s1">&#39;FR&#39;</span><span class="p">,</span> <span class="s1">&#39;GR&#39;</span><span class="p">,</span> <span class="s1">&#39;HR&#39;</span><span class="p">,</span> <span class="s1">&#39;HU&#39;</span><span class="p">,</span> <span class="s1">&#39;IE&#39;</span><span class="p">,</span> <span class="s1">&#39;IT&#39;</span><span class="p">,</span> <span class="s1">&#39;LT&#39;</span><span class="p">,</span> <span class="s1">&#39;LU&#39;</span><span class="p">,</span> <span class="s1">&#39;LV&#39;</span><span class="p">,</span> <span class="s1">&#39;MT&#39;</span><span class="p">,</span> <span class="s1">&#39;NL&#39;</span><span class="p">,</span> <span class="s1">&#39;PL&#39;</span><span class="p">,</span> <span class="s1">&#39;PT&#39;</span><span class="p">,</span> <span class="s1">&#39;RO&#39;</span><span class="p">,</span> <span class="s1">&#39;SE&#39;</span><span class="p">,</span> <span class="s1">&#39;SI&#39;</span><span class="p">,</span> <span class="s1">&#39;SK&#39;</span><span class="p">]</span>
-<span class="n">eu_starbucks_df</span> <span class="o">=</span> <span class="n">starbucks_df</span><span class="p">[</span><span class="n">starbucks_df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">eu_countries</span><span class="p">)]</span>
 
-<span class="c1"># Count the number of stores in each country in the EU</span>
-<span class="n">starbucks_by_country</span> <span class="o">=</span> <span class="n">eu_starbucks_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">)[</span><span class="s1">&#39;Brand&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Brand&#39;</span><span class="p">:</span> <span class="s1">&#39;Num_Stores&#39;</span><span class="p">})</span>
+<span class="c1"># Filter Starbucks stores in the EU</span>
+<span class="n">starbucks_eu_df</span> <span class="o">=</span> <span class="n">starbucks_df</span><span class="p">[</span><span class="n">starbucks_df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">eu_countries</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">starbucks_df</span><span class="p">[</span><span class="s1">&#39;Brand&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Starbucks&#39;</span><span class="p">)]</span>
 
-<span class="c1"># Set Seaborn darkgrid style</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;darkgrid&#39;</span><span class="p">)</span>
+<span class="c1"># Count the number of Starbucks stores by country</span>
+<span class="n">starbucks_by_country</span> <span class="o">=</span> <span class="n">starbucks_eu_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">)[</span><span class="s1">&#39;Brand&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Brand&#39;</span><span class="p">:</span> <span class="s1">&#39;Num_of_starbucks&#39;</span><span class="p">})</span>
 
-<span class="c1"># Create a barplot with the number of Starbucks stores in each country in the EU</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Num_Stores&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">starbucks_by_country</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#00704A&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Number of Starbucks stores in each country in the EU&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Number of stores&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="c1"># Sort the data by number of stores</span>
+<span class="n">starbucks_by_country</span> <span class="o">=</span> <span class="n">starbucks_by_country</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Num_of_starbucks&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Set the color scheme and font</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_palette</span><span class="p">(</span><span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">([</span><span class="s2">&quot;#00704A&quot;</span><span class="p">]))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">font</span><span class="o">=</span><span class="s2">&quot;Helvetica&quot;</span><span class="p">)</span>
+
+<span class="c1"># Create the bar chart</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Num_of_starbucks&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">starbucks_by_country</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#00704A&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Number of Starbucks Stores in the EU by Country&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Number of Stores&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Output:</p>
-<p><img alt="Starbucks stores in each EU Country" src="notebooks/starbucks_in_eu.png" /></p>
-<p>In this code, we have imported the <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> library to set the style of the chart to “darkgrid”. We have also used a <code class="docutils literal notranslate"><span class="pre">hexadecimal</span> <span class="pre">color</span> <span class="pre">code</span></code> (#00704A) for the color of the bars in the bar plot, which is similar to the color used by Starbucks. Finally, we have customized the chart by setting the title, label, and font size for the x-axis, y-axis, x-ticks, and y-ticks.</p>
-<p>Note: Please make sure that you have installed the <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> library to be able to reproduce this code on your system.</p>
+<p>This code groups the data by country using the <code class="docutils literal notranslate"><span class="pre">groupby()</span></code> function, and creates a horizontal bar chart using <code class="docutils literal notranslate"><span class="pre">barplot()</span></code> function. The color code <code class="docutils literal notranslate"><span class="pre">#00704A</span></code> is the main green color used in the Starbucks logo, and the chart is sorted by the number of stores in each country. The final chart will look like this:</p>
+<p><img alt="Starbucks chart by country" src="https://i.imgur.com/XEboX9P.png" /></p>
+<p>I hope this helps!</p>
 </div>
 </div>
-</section>
 </section>
 <section id="pause">
 <h2>Pause!<a class="headerlink" href="#pause" title="Permalink to this heading">#</a></h2>
@@ -938,28 +947,33 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>import matplotlib.pyplot as plt
-
-# Read the Starbucks directory csv file
+# Read the Starbucks dataframe
 starbucks_df = pd.read_csv(&#39;../data/directory.csv&#39;)
 
-# Filter the rows with countries in the EU
+# List of EU countries
 eu_countries = [&#39;AT&#39;, &#39;BE&#39;, &#39;BG&#39;, &#39;CY&#39;, &#39;CZ&#39;, &#39;DE&#39;, &#39;DK&#39;, &#39;EE&#39;, &#39;ES&#39;, &#39;FI&#39;, &#39;FR&#39;, &#39;GR&#39;, &#39;HR&#39;, &#39;HU&#39;, &#39;IE&#39;, &#39;IT&#39;, &#39;LT&#39;, &#39;LU&#39;, &#39;LV&#39;, &#39;MT&#39;, &#39;NL&#39;, &#39;PL&#39;, &#39;PT&#39;, &#39;RO&#39;, &#39;SE&#39;, &#39;SI&#39;, &#39;SK&#39;]
-eu_starbucks_df = starbucks_df[starbucks_df[&#39;Country&#39;].isin(eu_countries)]
 
-# Count the number of stores in each country in the EU
-starbucks_by_country = eu_starbucks_df.groupby(&#39;Country&#39;)[&#39;Brand&#39;].count().reset_index().rename(columns={&#39;Brand&#39;: &#39;Num_Stores&#39;})
+# Filter Starbucks stores in the EU
+starbucks_eu_df = starbucks_df[starbucks_df[&#39;Country&#39;].isin(eu_countries) &amp; (starbucks_df[&#39;Brand&#39;] == &#39;Starbucks&#39;)]
 
-# Set Seaborn darkgrid style
-sns.set_style(&#39;darkgrid&#39;)
+# Count the number of Starbucks stores by country
+starbucks_by_country = starbucks_eu_df.groupby(&#39;Country&#39;)[&#39;Brand&#39;].count().reset_index().rename(columns={&#39;Brand&#39;: &#39;Num_of_starbucks&#39;})
 
-# Create a barplot with the number of Starbucks stores in each country in the EU
-plt.figure(figsize=(10,7))
-sns.barplot(x=&#39;Country&#39;, y=&#39;Num_Stores&#39;, data=starbucks_by_country, color=&#39;#00704A&#39;)
-plt.title(&#39;Number of Starbucks stores in each country in the EU&#39;, fontsize=16, fontweight=&#39;bold&#39;)
-plt.xlabel(&#39;Country&#39;, fontsize=14, fontweight=&#39;bold&#39;)
-plt.ylabel(&#39;Number of stores&#39;, fontsize=14, fontweight=&#39;bold&#39;)
-plt.xticks(fontsize=12, fontweight=&#39;bold&#39;)
-plt.yticks(fontsize=12, fontweight=&#39;bold&#39;)
+# Sort the data by number of stores
+starbucks_by_country = starbucks_by_country.sort_values(&#39;Num_of_starbucks&#39;, ascending=False)
+
+# Set the color scheme and font
+sns.set_palette(sns.color_palette([&quot;#00704A&quot;]))
+sns.set(font=&quot;Helvetica&quot;)
+
+# Create the bar chart
+plt.figure(figsize=(12,8))
+sns.barplot(x=&#39;Num_of_starbucks&#39;, y=&#39;Country&#39;, data=starbucks_by_country, color=&quot;#00704A&quot;)
+plt.title(&#39;Number of Starbucks Stores in the EU by Country&#39;, fontsize=18, fontweight=&#39;bold&#39;)
+plt.xlabel(&#39;Number of Stores&#39;, fontsize=14)
+plt.ylabel(&#39;Country&#39;, fontsize=14)
+plt.xticks(fontsize=14)
+plt.yticks(fontsize=14)
 plt.show()
 </pre></div>
 </div>
@@ -982,7 +996,7 @@ plt.show()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0b476bebd72cc5bd44d3bf35788c4b8db5a8e8badeb561fb178527d90b6028d2.png" src="../_images/0b476bebd72cc5bd44d3bf35788c4b8db5a8e8badeb561fb178527d90b6028d2.png" />
+<img alt="../_images/24f471f82b1d2cd8faad81241885cbefe2ddc882e49097fd314f361469224a76.png" src="../_images/24f471f82b1d2cd8faad81241885cbefe2ddc882e49097fd314f361469224a76.png" />
 </div>
 </div>
 </section>
@@ -1053,23 +1067,26 @@ plt.show()
   <a class="reference internal nav-link" href="#step-3-load-your-data-and-parse-inputs-for-the-openai-query">
    Step 3. Load your data and parse inputs for the OpenAI query
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#step-4-prime-the-ai-define-the-role-and-response-parameters-for-the-ai">
-     Step 4. Prime the AI – define the role and response parameters for the AI
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#step-5-write-a-function-for-sending-base-prompt-and-question-to-openai-and-storing-response">
-     Step 5. Write a function for sending base prompt and question to OpenAI and storing response.
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#step-6-ask-a-question">
-     Step 6. Ask a question!
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-4-prime-the-ai-define-the-role-and-response-parameters-for-the-ai">
+   Step 4. Prime the AI – define the role and response parameters for the AI
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-5-write-a-function-for-sending-base-prompt-and-question-to-openai-and-storing-response">
+   Step 5. Write a function for sending base prompt and question to OpenAI and storing response.
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-6-ask-a-question">
+   Step 6. Ask a question!
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optional-ask-a-follow-up-question">
+   Optional: Ask a follow up question.
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#pause">
