@@ -2,12 +2,10 @@ format: jb-book
 root: README
 
 parts:
-  - caption: Examples
-    numbered: True
+  - caption: How to Use ChatGPT to Generate Code for Data Science (with Coffee)
+    numbered: False
     chapters:
-      - file: notebooks/world-bank-api.ipynb
-      - file: notebooks/world-bank-package.ipynb
-      - file: notebooks/nasa-apod.ipynb
+      - file: notebooks/CoffeeChat.ipynb
   - caption: Additional Resources
     chapters:
       - url: https://datapartnership.org
