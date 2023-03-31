@@ -528,21 +528,23 @@ title="Print to PDF"
               
   <section class="tex2jax_ignore mathjax_ignore" id="putting-chatgpt-to-data-science-work">
 <h1>🚀 Putting ChatGPT to (Data Science) Work<a class="headerlink" href="#putting-chatgpt-to-data-science-work" title="Permalink to this heading">#</a></h1>
-<p>Hello!</p>
-<p>I started off with the objective of writing a Streamlit application for using OpenAI APIs to query and produce responses for project data. To get started, I used a test dataset – a <a class="reference external" href="https://www.kaggle.com/datasets/starbucks/store-locations">directory of Starbucks locations</a> – that I found on Kaggle.</p>
-<p>Initial results were very promising:</p>
+<p>Hello! Here’s what we’ve got.</p>
+<p>I began with the objective of writing a Streamlit application for using OpenAI APIs to answer questions based on information in provided datasets. To get started, I used a test dataset – a <a class="reference external" href="https://www.kaggle.com/datasets/starbucks/store-locations">directory of Starbucks locations</a> – that I found on Kaggle.</p>
+<p>After realizing that it doesn’t take very much data to exceed OpenAI API token limits and finding ways to pre-parse my data, it was smooth sailing. Initial results were very promising:</p>
 <p><img alt="" src="docs/images/botty0.png" /></p>
 <p><img alt="" src="_images/botty1.png" /></p>
-<p>But it quickly became apparant that the answers were nonsense. What we really need ChatGPT to do is to:</p>
-<p>(1)  Understand the basic nature our dataset – column names, sample data, where the files are located, etc.</p>
-<p>(2) Write code that could help us answer our question, based on the dataset. The code should be easy to cut-paste and use.</p>
-<p>This worked out super well:</p>
+<p>But it quickly became apparant that while the methods seemed about right, the answers were complete nonsense. What we really need ChatGPT to do is to:</p>
+<ol class="arabic simple">
+<li><p>Understand our meta data – e.g., column names, data types, where the files are located, etc. and</p></li>
+<li><p>Write code that could help us answer our question, based on the metadata. The code should be easy to cut-paste and use.</p></li>
+</ol>
+<p>This approach worked out super well:</p>
 <p><img alt="" src="docs/images/botty2.png" /></p>
-<p>But, all this cutting-and-pasting from Streamlit into PyCharm got annoying. So, I started over again and prepared a Jupyter notebook that does the same thing, plus (at your own risk) automatically parses and executes the code as well. It’s so neat! Take a look at a sample output:</p>
+<p>BUT. All this cutting-and-pasting from Streamlit into PyCharm got annoying. So, I started over again and prepared a Jupyter notebook that does the same thing, plus (at one’s own risk) automatically parses and executes the code. It’s so neat! Take a look at a sample output:</p>
 <p><img alt="" src="_images/botty3.png" /></p>
 <p><img alt="" src="_images/botty4.png" /></p>
-<p>The craziest thing is that the output (maps, charts) will look a little different everytime (!), but the numerical results will generally be consistent. No, wait, what is crazier is how the OpenAI API combines its own knowledge – in this case, the names of EU countries and the Starbucks brand color – with our data to generate a response. Wow.</p>
-<p>As a next step, I will apply these techniques to project data – including multiple datasets – to see how we may expedite our data exploration work. Meanwhile, comments and feedback welcome!</p>
+<p>The craziest thing is that the output (maps, charts) will look a little different everytime (!), but the numerical results will generally be consistent. No, wait, the crazier thing is how the OpenAI API combines its own knowledge – in this case, the names of EU countries and the Starbucks brand color – with our metadata to generate a response. Wow.</p>
+<p>As a next step, I am applying these techniques to project data – including multiple datasets – to see how we may expedite our data exploration work. Meanwhile, comments and feedback welcome!</p>
 <section id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this heading">#</a></h2>
 <p>This repo is licensed under the <span class="xref myst"><strong>World Bank Master Community License Agreement</strong></span>, because I’m a company gal, through and through.</p>
