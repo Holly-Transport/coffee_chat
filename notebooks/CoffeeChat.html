@@ -551,16 +551,18 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#step-6-ask-a-question">
    Step 6. Ask a question!
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#optional-ask-a-follow-up-question">
-   Optional: Ask a follow up question.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pause">
-   Pause!
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#optional-ask-a-follow-up-question">
+     Optional: Ask a follow up question.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pause">
+     Pause!
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#step-7-parse-the-openai-response-to-pull-out-the-python-code">
@@ -862,9 +864,8 @@ title="Print to PDF"
 <p>Note that this code assumes that the “Country” column contains the two-letter country codes, such as “AD” for Andorra, “AE” for United Arab Emirates, etc.</p>
 </div>
 </div>
-</section>
 <section id="optional-ask-a-follow-up-question">
-<h2>Optional: Ask a follow up question.<a class="headerlink" href="#optional-ask-a-follow-up-question" title="Permalink to this heading">#</a></h2>
+<h3>Optional: Ask a follow up question.<a class="headerlink" href="#optional-ask-a-follow-up-question" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Optional follow up question. You can add these until you run out of tokens. </span>
@@ -917,9 +918,10 @@ title="Print to PDF"
 </div>
 </section>
 <section id="pause">
-<h2>Pause!<a class="headerlink" href="#pause" title="Permalink to this heading">#</a></h2>
+<h3>Pause!<a class="headerlink" href="#pause" title="Permalink to this heading">#</a></h3>
 <p>Sometimes the response will try to answer the prompt, in addition to providing the code. These answers are often (but not always) nonsense! Make sure you review and run the code yourself to be certain of the result.</p>
 <p>Now, here is what is really exciting about OpenAI: the API combines information about the dataset with its own knowledge. For example, when asking about the number of Starbucks in each EU country, the AI will generate a list of countries to use. Or, if asking the AI to use Starbucks colors for charts, it will know to use infamous Starbucks green. 😃 Amazing, and also very risky – always double check the ‘additional knowledge’ being provided.</p>
+</section>
 </section>
 <section id="step-7-parse-the-openai-response-to-pull-out-the-python-code">
 <h2>Step 7. Parse the OpenAI response to pull out the Python code.<a class="headerlink" href="#step-7-parse-the-openai-response-to-pull-out-the-python-code" title="Permalink to this heading">#</a></h2>
@@ -1082,16 +1084,18 @@ plt.show()
   <a class="reference internal nav-link" href="#step-6-ask-a-question">
    Step 6. Ask a question!
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#optional-ask-a-follow-up-question">
-   Optional: Ask a follow up question.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pause">
-   Pause!
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#optional-ask-a-follow-up-question">
+     Optional: Ask a follow up question.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pause">
+     Pause!
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#step-7-parse-the-openai-response-to-pull-out-the-python-code">
