@@ -28,7 +28,7 @@ This approach worked out super well:
 
 
 
-![](docs/images/botty2.png)
+![](docs/images/Botty2.png)
 
 
 
