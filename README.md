@@ -1,8 +1,6 @@
 # 🚀 Putting ChatGPT to (Data Science) Work
 
-Determined to see whether ChatGPT can do more than write sonnets, I spent a weekend working with the OpenAI GPT 3.5 model API (released on March 1) to see whether we could use the API to support the work of our Lab. Following is what I whipped up using a simple Starbucks dataset as an example.
-
-Note -- my team will be shaking their heads when they see this, since they are far more advanced data scientists than I can aspire to be – but I thought it’s worthwhile to show how even a...débutante... coder can do remarkable things with the new generative AIs. 
+Determined to see whether ChatGPT can do more than write sonnets, I spent a weekend working with the OpenAI GPT 3.5 model API (released on March 1) to see whether we could use the API to support the work of our Lab. The answer is...YES. Following is what I whipped up using a simple Starbucks dataset as an example. I hope you can make it better!
 
 I began with the objective of writing a Streamlit application for using OpenAI APIs to answer questions based on information in datasets that I provide. To get started, I used a test dataset -- a [directory of Starbucks locations](https://www.kaggle.com/datasets/starbucks/store-locations) -- that I found on Kaggle. 
 
