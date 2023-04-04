@@ -4,7 +4,7 @@ Determined to see whether ChatGPT can do more than write sonnets, I spent a week
 
 I began with the objective of writing a Streamlit application for using OpenAI APIs to answer questions based on information in datasets that I provide. To get started, I used a test dataset -- a [directory of Starbucks locations](https://www.kaggle.com/datasets/starbucks/store-locations) -- that I found on Kaggle. 
 
-Initial results were very promising:
+Initial results were very promising. Here are some screenshots of my app:
 
 
 ![](docs/images/Botty0.png)
