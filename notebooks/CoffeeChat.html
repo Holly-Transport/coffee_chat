@@ -641,7 +641,7 @@ title="Print to PDF"
 <span class="c1"># Generate a list of columns for each dataset, for later use in generating code</span>
 <span class="n">columns</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
-<span class="c1"># If you can do it under the API token limit, generate head data for each file, to give the OpenAI API context. </span>
+<span class="c1"># If you can do it under the API token limit, generate head (or synthetic head) data for each file, to give the OpenAI API context. </span>
 <span class="c1"># Store as a .json so it transmits properly.</span>
 <span class="n">head</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 <span class="n">json_head</span> <span class="o">=</span> <span class="n">head</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;records&#39;</span><span class="p">)</span>
